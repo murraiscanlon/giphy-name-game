@@ -1,0 +1,19 @@
+button{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.buttons-container{
+    margin: 10px auto;
+}
+
+.image-container{
+    display: inline-block;
+}
+
+.image{
+    width: 300px;
+}
+
+
+
