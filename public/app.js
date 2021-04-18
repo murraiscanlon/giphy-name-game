@@ -1,16 +1,21 @@
 //create variable that stores button in a JavaScript variable
 let firstButton = document.querySelector("#firstButton")
 let secondButton = document.querySelector("#secondButton")
+let thirdButton = document.querySelector("#thirdButton")
 let gifs;
 
 //add an event listener to the button.
 //Run the function sendApiRequest when the button is clicked
 firstButton.addEventListener("click", () => {
-    sendApiRequest('#firstInput') //API, "#input
+    sendApiRequest('#firstInput')
 })
 
 secondButton.addEventListener("click", () => {
-    sendApiRequest('#secondInput') //API, "#input
+    sendApiRequest('#secondInput')
+})
+
+thirdButton.addEventListener("click", () => {
+    sendApiRequest('#thirdInput')
 })
 
 //fetch data from the API
