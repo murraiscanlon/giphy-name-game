@@ -27,15 +27,23 @@ async function sendApiRequest(buttonId) { //API_KEY
     gifs = await response.json();
     // console.log(gifs);
 
+    let position = '';
+    if (buttonId === "#firstInput"){
+        position = "#firstImage";
+    } else if (buttonId === "#secondInput"){
+        position = "#secondImage";
+    } else {
+        position = "#thirdImage";
+    }
+
     //call the function that does something with the .json data
-    useApiData(gifs);
+    useApiData(gifs, position);
 
 }
 
 //do something with the API data you've just received
-function useApiData(gifs) {
-    document.querySelector('#firstImage').innerHTML = `<img id="gif" src="${gifs.data[0].images.original.url}">`
-    document.querySelector('#secondImage').innerHTML = `<img id="gif" src="${gifs.data[0].images.original.url}">`
+function useApiData(gifs, imagePosition) {
+    document.querySelector(imagePosition).innerHTML = `<img id="gif" src="${gifs.data[0].images.original.url}">`
 }
 
 
