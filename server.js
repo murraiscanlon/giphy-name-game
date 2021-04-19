@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.get("/giphySearch/:searchTerm" , (req, res) => {
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${req.params.searchTerm}`
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&rating="pg-13"&q=${req.params.searchTerm}`
     axios.get(url).then( (response) => {
         // console.log("response", response.data)
         res.json(response.data)
