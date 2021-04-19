@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 app.get("/giphySearch/:searchTerm" , (req, res) => {
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${req.params.searchTerm}`
     axios.get(url).then( (response) => {
-        console.log("response", response.data)
+        // console.log("response", response.data)
         res.json(response.data)
     })
     // console.log(req.params.searchTerm)

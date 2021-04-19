@@ -19,14 +19,14 @@ thirdButton.addEventListener("click", () => {
 })
 
 //fetch data from the API
-async function sendApiRequest(buttonId) { //API_KEY
+async function sendApiRequest(buttonId) {
 
     //get the user input value from the input text field
     let userInput = document.querySelector(buttonId).value;
 
     //send the request for data. Hope for status code: 200
     let response = await fetch(`/giphySearch/${userInput}`);
-    console.log(response);
+    // console.log(response);
 
     //get data in form of usable .json
     gifs = await response.json();
