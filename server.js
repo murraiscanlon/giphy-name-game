@@ -2,7 +2,8 @@ const express = require("express")
 const axios = require("axios")
 const app = express()
 const port = process.env.PORT || 3000
-const API_KEY = 'q7GtPLWMSA5t8S48wDG2iXKrrDqBzGci'; //process.env.API_KEY;
+require('dotenv').config();
+const API_KEY = process.env.API;
 app.use(express.static(__dirname + '/public'));
 
 // let response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${userInput}`);
