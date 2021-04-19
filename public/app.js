@@ -8,15 +8,33 @@ let gifs;
 //Run the function sendApiRequest when the button is clicked
 firstButton.addEventListener("click", () => {
     sendApiRequest('#firstInput')
-})
+});
+
+firstButton.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendApiRequest('#firstInput')
+    }
+});
 
 secondButton.addEventListener("click", () => {
     sendApiRequest('#secondInput')
-})
+});
+
+secondButton.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendApiRequest('#secondInput')
+    }
+});
 
 thirdButton.addEventListener("click", () => {
     sendApiRequest('#thirdInput')
-})
+});
+
+thirdButton.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendApiRequest('#thirdInput')
+    }
+});
 
 //fetch data from the API
 async function sendApiRequest(buttonId) {

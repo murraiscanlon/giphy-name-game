@@ -5,21 +5,37 @@ body{
 
 }
 
-button{
-    margin-bottom: 5px;
-    margin-top: 5px;
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 4rem;
 }
 
 .buttons-container{
+    text-align: center;
+}
+
+.btn-group{
     margin: 10px auto;
 }
+
+
+button{
+
+}
+
+
 .image-container{
-    width: 75%;
-    height: 30%;
+    text-align: center;
+    justify-content: center;
+
 
 }
 
 .image{
+    margin-top: 50px;
     display: inline-block;
 }
 
