@@ -8,9 +8,21 @@ body{
 h1{
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 4rem;
+}
+
+p {
+    /*margin: 8px auto;*/
+    margin: 8px auto 0;
+    max-width: 800px;
+    padding: 12px;
+    font-size: 1rem;
+}
+.credit{
+    margin: 0 auto 10px;
+    color: #5b6d5b;
 }
 
 .buttons-container{
@@ -18,20 +30,19 @@ h1{
 }
 
 .btn-group{
-    margin: 10px auto;
+    margin: 0 auto;
+    height: 40px;
 }
 
 
 button{
-
+    width: 100px;
 }
 
 
 .image-container{
     text-align: center;
     justify-content: center;
-
-
 }
 
 .image{
@@ -42,6 +53,8 @@ button{
 #gif{
     width: 300px;
 }
+
+
 
 /*testing css*/
 
